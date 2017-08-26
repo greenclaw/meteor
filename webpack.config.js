@@ -2,7 +2,7 @@ var webpack = require('webpack');
 module.exports = {
   entry: [
     "webpack-hot-middleware/client",
-    "./client/client.js"
+    "./index.js"
   ],
   output: {
     path: require("path").resolve("./dist"),

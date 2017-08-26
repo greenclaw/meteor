@@ -16,7 +16,7 @@ app.use(webpackHotMiddleware(compiler));
 app.use(express.static('./dist'));
 
 app.use('/', function (req, res) {
-    res.sendFile(path.resolve('client/index.html'));
+    res.sendFile(path.resolve('src/index.html'));
 });
 
 var port = 4000;
