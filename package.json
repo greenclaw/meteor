@@ -4,11 +4,12 @@
   "description": "A simple todo list app built with React, Redux and Webpack",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "nodemon server/server.js --ignore components"
+    "serve": "nodemon server/server.js --ignore components",
+    "build": "webpack -p"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kweiberth/react-todo-list.git"
+    "url": "https://github.com/greenclaw/meteor.git"
   },
   "author": "Kurt Weiberth",
   "license": "ISC",
@@ -22,10 +23,11 @@
     "express": "^4.15.4",
     "firebase": "^4.3.0",
     "firebase-tools": "^3.9.2",
-    "jQuery": "^1.7.4",
+    "jquery": "^3.2.1",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
     "react-redux": "^5.0.3",
+    "react-thunk": "^1.0.0",
     "redux": "^3.6.0",
     "superagent": "^3.5.2",
     "webpack": "^1.14.0",
