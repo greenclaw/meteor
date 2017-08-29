@@ -2,29 +2,26 @@ var webpack = require('webpack');
 module.exports = {
   entry: [
     "webpack-hot-middleware/client",
-    "./index.js"
+    "./src/js/index.js"
   ],
   output: {
     path: require("path").resolve("./dist"),
     filename: "bundle.js",
-    publicPath: "/"
+    publicPath: '/'
   },
 
 
   plugins: [
       new webpack.optimize.OccurrenceOrderPlugin(),
       new webpack.HotModuleReplacementPlugin(),
-      new webpack.NoErrorsPlugin()
+      new webpack.NoEmitOnErrorsPlugin()
   ],
   module: {
       loaders: [
         {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: ["babel-loader"],
-        query: {
-          presets: ['react', 'es2015', 'react-hmre']
-        }
+        loader: ["babel-loader"]
       }
     ]
   }
